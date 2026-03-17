@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, icons } from "lucide-react";
+import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -62,35 +63,34 @@ export const Hero = () => {
           </div>
 
             {/* call-to-action buttons */}
-            <div>
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 ">
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <button className="">
                 {/* animated svg border */}
                 {/*svg border animation */} 
-                <svg
-                  className="absolute top-0 left-0 w-full h-full pointer-events-none"
-                  viewBox="0 0 200 60"
-                  preserveAspectRatio="none"
-                  style={{overflow: visible}}
-                >
-                  <path
-                    d="M0,0 L200,0 L200,60 L0,60 Z"
-                    fill="none"
-                    stroke="var(--color-primary)"
-                    strokeWidth="2"
-                    strokeDasharray="400 550"
-                    strokeDashoffset="400"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="download-cv-path"
-                  />
-                </svg>
-               <span className="ml-4" > <Download /> Download CV</span>
+              <AnimatedBorderButton />
+           
+            </div>
 
-              </button>
-              
+            {/* social links */}
+            <div className="mt-8 flex items-center gap-4 animate-fade-in animation-delay-400">
+              <span>FOLLOW: </span>
+              {[{ icon: Github, href: "https://github.com/Sheeba193" },
+                { icon: Linkedin, href: "https://linkedin.com" },
+                { icon: Twitter, href: "https://twitter.com" },
+                { icon: Instagram, href: "https://instagram.com" }, 
+              ]}.map((social,idx) => (
+                <a 
+                  key={idx}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center text-foreground hover:text-primary transition-colors"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))
             </div>
       </div>
 

@@ -30,7 +30,10 @@ export const AnimatedBorderButton = ({ children }) => {
           className="animated-border-path"
         />
       </svg>
-    <span className="ml-4" > <Download /> Download CV</span>
+    <span className="relative z-10 flex items-center justify-center gap-2">
+      <Download className="w-5 h-5"/>
+      Download CV
+    </span>
 
     </button>
   );
