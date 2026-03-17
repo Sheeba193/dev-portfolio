@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -28,6 +28,7 @@ export const Hero = () => {
             }
           />
         ))}
+      </div>
 
         {/* content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
@@ -65,14 +66,37 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
+              <button className="">
+                {/* animated svg border */}
+                {/*svg border animation */} 
+                <svg
+                  className="absolute top-0 left-0 w-full h-full pointer-events-none"
+                  viewBox="0 0 200 60"
+                  preserveAspectRatio="none"
+                  style={{overflow: visible}}
+                >
+                  <path
+                    d="M0,0 L200,0 L200,60 L0,60 Z"
+                    fill="none"
+                    stroke="var(--color-primary)"
+                    strokeWidth="2"
+                    strokeDasharray="400 550"
+                    strokeDashoffset="400"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="download-cv-path"
+                  />
+                </svg>
+               <span className="ml-4" > <Download /> Download CV</span>
+
+              </button>
               
             </div>
       </div>
 
           
           {/* right-column-image content */}
-
-        </div>
+            
       </div>
     </section>
 
