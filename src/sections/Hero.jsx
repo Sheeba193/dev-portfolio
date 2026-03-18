@@ -28,11 +28,12 @@ export const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* background */}
       <div>
-       <img src="/bgg.jpeg" 
-       alt="hero image"
-       className="w-full h-full object-cover opacity-40" />
+        <img src="/bgg.jpeg" 
+          alt="hero image"
+          className="w-full h-full object-cover opacity-40" 
+        />
 
-       <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80  to-background" />
+       <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background" />
 
       </div>
       {/* green dots */}
@@ -55,68 +56,71 @@ export const Hero = () => {
 
         {/* content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12  items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+
           {/* left-column-text content */}
-          <div className="animate-fade-in" >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-              <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-              Software Engineer * React Specialist 
-            </span>
-            
-          </div>
-
-          {/* headline */}
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-6xl lg:7xl font-bold leading-tight animate-fade-in animation-delay-100"> 
-              Crafting <span className="text-primary glow-text">Digital </span>
-              <br />
-              experiences with 
-              <br />
-              <span className="font-serif italic font-normal text-white">
-                React.
+          <div className="space-y-8">
+            <div className="animate-fade-in" >
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                Software Engineer * React Specialist 
               </span>
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-              I'm a passionate software engineer specializing in React, 
-              dedicated to crafting seamless and engaging web experiences. 
-              With a strong foundation in JavaScript and a keen eye for design, 
-              I bring ideas to life through clean, efficient code. Let's build something amazing together!
-            </p>
+              
+            </div>
+
+            {/* headline */}
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100"> 
+                Crafting <span className="text-primary glow-text">Digital </span>
+                <br />
+                experiences with 
+                <br />
+                <span className="font-serif italic font-normal text-white">
+                  React.
+                </span>
+              </h1>
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
+                I'm a passionate software engineer specializing in React, 
+                dedicated to crafting seamless and engaging web experiences. 
+                With a strong foundation in JavaScript and a keen eye for design, 
+                I bring ideas to life through clean, efficient code. Let's build something amazing together!
+              </p>
+            </div>
+
+              {/* call-to-action buttons */}
+              <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 ">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+                  {/* animated svg border */}
+                  {/*svg border animation */} 
+                <AnimatedBorderButton />
+            
+              </div>
+
+              {/* social links */}
+              <div className="mt-8 flex items-center gap-4 animate-fade-in animation-delay-400">
+                <span className="text-sm text-muted-foreground">Follow me: </span>
+                {[{ icon: Github, href: "https://github.com/Sheeba193" },
+                  { icon: Linkedin, href: "https://linkedin.com" },
+                  { icon: Twitter, href: "https://twitter.com" },
+                  { icon: Instagram, href: "https://instagram.com" }, 
+                ].map((social, idx) => (
+                  <a 
+                    key={idx}
+                    href={social.href}
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </a>
+                ))}
+              </div>
           </div>
 
-            {/* call-to-action buttons */}
-            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 ">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-                {/* animated svg border */}
-                {/*svg border animation */} 
-              <AnimatedBorderButton />
-           
-            </div>
+              {/* right-column-image content */}
 
-            {/* social links */}
-            <div className="mt-8 flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
-              {[{ icon: Github, href: "https://github.com/Sheeba193" },
-                { icon: Linkedin, href: "https://linkedin.com" },
-                { icon: Twitter, href: "https://twitter.com" },
-                { icon: Instagram, href: "https://instagram.com" }, 
-              ].map((social, idx) => (
-                <a 
-                  key={idx}
-                  href={social.href}
-                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
-      </div>
-
-          
-          {/* right-column-image content */}
           <div className="relative animate-fade-in animation-delay-300">
+
           {/* profile image */}
             <div className="relative max-w-md mx-auto">
               <div  className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
@@ -132,6 +136,7 @@ export const Hero = () => {
                     <span className="text-sm font-medium">Available for work</span>
                   </div>
                 </div>
+
                 {/* stats badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 animation-delay-500">
                   <div className="text-2xl font-bold text-primary">5+</div>
@@ -139,37 +144,41 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
-   
-          </div>
-         
-            {/* skills section */}
-          <div className="mt-20 animate-fade-in animation-delay-600">
-            <p className="text-sm text-muted-foreground mb-6 text-center">
-              Technologies i work with:
-            </p>
-            <div className="relative overflow-hidden">
-              <div className="flex animate-marquee">
-                {[...skills, ...skills].map((skill, idx) => (
-                  <div key={idx}  className="flex-shrink-0 px-8 py-4">
-                    <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
-                  </div>
-                ))}
 
-              </div>
-            </div>
           </div>
+          
       </div>
+
+          
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-800">
-        <a 
-          href="#about" 
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
-        >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-6 h-6 animate-bounce" />
+         
+      {/* skills section */}
+      <div className="mt-20 animate-fade-in animation-delay-600">
+        <p className="text-sm text-muted-foreground mb-6 text-center">
+          Technologies i work with:
+        </p>
+        <div className="relative overflow-hidden">
+          <div className="flex animate-marquee">
+            {[...skills, ...skills].map((skill, idx) => (
+              <div key={idx}  className="flex-shrink-0 px-8 py-4">
+                <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
+              </div>
+            ))}
 
-        </a>
+          </div>
+        </div>
       </div>
+    </div>
+       
+    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-800">
+      <a 
+        href="#about" 
+        className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
+      >
+        <span className="text-xs uppercase tracking-wider">Scroll</span>
+        <ChevronDown className="w-6 h-6 animate-bounce" />
+      </a>
+    </div>
 
     </section>
 
