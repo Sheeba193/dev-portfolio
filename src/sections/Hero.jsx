@@ -3,7 +3,7 @@ import { ArrowRight, Github, Linkedin, Twitter, Instagram, ChevronDown } from "l
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
-  "React",
+  "React JS",
   "JavaScript",                                                     
   "TypeScript",
   "Node.js",
@@ -11,16 +11,12 @@ const skills = [
   "Tailwind CSS",      
   "HTML",
   "Git",
-  "RESTful APIs",
-  "GraphQL",
   "GitHub Actions",
-  "Webpack",
-  "Babel",  
-  "Testing (Jest, React Testing Library)",
-  "Performance Optimization",   
-  "Agile Methodologies",
-  "Problem Solving",
-  "Figma"
+  "Shadcn UI",
+  "RESTful APIs",  
+  "Testing (Jest, React Testing Library)",   
+  "Figma",
+  "Postman",
 ];
 
 export const Hero = () => {
@@ -102,8 +98,8 @@ export const Hero = () => {
               <div className="mt-8 flex items-center gap-4 animate-fade-in animation-delay-400">
                 <span className="text-sm text-muted-foreground">Follow me: </span>
                 {[{ icon: Github, href: "https://github.com/Sheeba193" },
-                  { icon: Linkedin, href: "https://linkedin.com" },
-                  { icon: Twitter, href: "https://twitter.com" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/in/kerubo-kengere-865969231/" },
+                  { icon: Twitter, href: "https://x.com/KeruboSheeba" },
                   { icon: Instagram, href: "https://instagram.com" }, 
                 ].map((social, idx) => (
                   <a 
@@ -154,14 +150,14 @@ export const Hero = () => {
          
       {/* skills section */}
       <div className="mt-20 animate-fade-in animation-delay-600">
-        <p className="text-sm text-muted-foreground mb-6 text-center">
+        <p className="text-lg font-bold text-muted-foreground mb-6 text-center">
           Technologies i work with:
         </p>
         <div className="relative overflow-hidden">
           <div className="flex animate-marquee">
             {[...skills, ...skills].map((skill, idx) => (
               <div key={idx}  className="flex-shrink-0 px-8 py-4">
-                <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>
+                <span className="text-xl font-semibold text-primary/50 hover:text-muted-foreground transition-colors">{skill}</span>
               </div>
             ))}
 
