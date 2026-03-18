@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Download, icons } from "lucide-react";
-import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { ArrowRight, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -75,27 +75,50 @@ export const Hero = () => {
 
             {/* social links */}
             <div className="mt-8 flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span>FOLLOW: </span>
+              <span className="text-sm text-muted-foreground">Follow me: </span>
               {[{ icon: Github, href: "https://github.com/Sheeba193" },
                 { icon: Linkedin, href: "https://linkedin.com" },
                 { icon: Twitter, href: "https://twitter.com" },
                 { icon: Instagram, href: "https://instagram.com" }, 
-              ]}.map((social,idx) => (
+              ].map((social, idx) => (
                 <a 
                   key={idx}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center text-foreground hover:text-primary transition-colors"
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
-              ))
+              ))}
             </div>
       </div>
 
           
           {/* right-column-image content */}
+          <div className="relative animate-fade-in animation-delay-300">
+          {/* profile image */}
+            <div className="relative max-w-md mx-auto">
+              <div  className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
+              <div className="relative glass rounded-3xl p-2 glow-border">
+                <img src="/profile.jpeg" 
+                alt="profile image"
+                className="w-full aspect-4/5 object-cover rounded-2xl" />
+
+                {/* floating badge */}
+                <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                  <div className="flex items-center gap-3 ">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                    <span className="text-sm font-medium">Available for work</span>
+                  </div>
+                </div>
+                {/* stats badge */}
+                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 animation-delay-500">
+                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-xs text-muted-foreground"> Years of Experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
             
       </div>
     </section>
