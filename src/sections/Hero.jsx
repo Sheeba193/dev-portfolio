@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Github, Linkedin, Twitter, Instagram, ChevronDown } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Twitter, Instagram, ChevronDown, Download } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
@@ -90,7 +90,10 @@ export const Hero = () => {
                 </Button>
                   {/* animated svg border */}
                   {/*svg border animation */} 
-                <AnimatedBorderButton />
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5"/>
+                  Download CV
+                </AnimatedBorderButton>
             
               </div>
 
