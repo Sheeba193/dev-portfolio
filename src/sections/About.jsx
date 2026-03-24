@@ -47,8 +47,6 @@ export const About = () => {
                 <p>
                   With experience leading cross-functional teams 
                   delivering user-centered solutions, I enjoy turning ideas into practical, impactful systems. 
-                  My background spans web development, UI/UX design, and agile methodologies, allowing me to 
-                  approach problems with both technical precision and creative insight.
                 </p>
 
                 <p>
@@ -64,8 +62,7 @@ export const About = () => {
               <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                 <p className="text-lg font-medium italic text-foreground">
                   My mission is to leverage technology and innovation to create meaningful, user-centered solutions 
-                  that solve real-world problems and drive positive impact. I strive to continuously grow my skills, 
-                  embrace new challenges, and contribute to environments where creativity, collaboration, and integrity thrive. 
+                  that solve real-world problems and drive positive impact.
                   
                 </p>
               </div>
