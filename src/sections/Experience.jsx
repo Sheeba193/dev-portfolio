@@ -1,5 +1,112 @@
+const experiences = [
+  {
+    period: "Jan 2023 – Present",
+    jobTitle: "Freelance Web Developer & Designer",
+    company: "Self-Employed",
+    description:
+      "Design and develop responsive websites for clients across multiple industries. Collaborate with clients to translate business requirements into functional digital solutions while optimizing performance, usability, and user experience. Integrate backend services and maintain scalable web applications.",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "PHP", "WordPress"],
+    current: true,
+  },
+  {
+    period: "Jan 2023 – Present",
+    jobTitle: "Social Media Manager (Freelance)",
+    company: "Multiple Brands (Robie Cleaning Services, Luxe Fusion Creations, Dalali Merchants, Granite & Marble Interior Design)",
+    description:
+      "Manage and grow digital presence for multiple brands by creating and executing content strategies, producing high-quality visual content, and running targeted ad campaigns. Handle end-to-end social media management including posting, engagement, and analytics while helping new businesses establish strong online visibility.",
+    technologies: ["Social Media Marketing", "Content Creation", "Ads Management", "Canva", "Analytics Tools"],
+    current: true,
+  },
+  {
+    period: "Feb 2025 – Nov 2025",
+    jobTitle: "IT Specialist & Marketing & Digital Presence Manager",
+    company: "Dalali Merchants LTD",
+    description:
+      "Led digital marketing strategy and execution, increasing brand visibility across platforms. Managed social media accounts, designed marketing materials, ran paid ad campaigns, and maintained the company website. Applied UI/UX improvements to enhance customer experience while supporting sales coordination and inventory management.",
+    technologies: ["Digital Marketing", "UI/UX", "Web Management", "Social Media Ads", "Content Design"],
+    current: false,
+  },
+  {
+    period: "June 2023 – Feb 2025",
+    jobTitle: "Junior Frontend Developer",
+    company: "Finetek Labs",
+    description:
+      "Developed and maintained modern web applications using React. Translated design requirements into responsive interfaces, optimized performance, and built reusable components. Collaborated with cross-functional teams and participated in Agile development processes.",
+    technologies: ["React", "JavaScript", "HTML", "CSS", "Git", "Agile"],
+    current: false,
+  },
+  {
+    period: "April 2023 – June 2023",
+    jobTitle: "ICT & Software Intern",
+    company: "Office of the Governor, Nakuru County",
+    description:
+      "Provided technical support for internal systems, assisted in troubleshooting software issues, and supported system updates. Improved usability of internal tools while working within structured operational and reporting environments.",
+    technologies: ["ICT Support", "System Maintenance", "Troubleshooting"],
+    current: false,
+  },
+];
 export const Experience = () => {
   return (
-    <section></section>
+    <section id="experience" className="py-32 relative overflow-hidden">
+      <div  className="absolute top-1/2 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2"/>
+      <div className="container mx-auto px-6 relative z-10">
+        {/* section header */}
+        <div className="max-w-3xl mb-16">
+          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
+            Career Journey
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
+            Experience that {""}
+            <span className="font-serif italic font-normal text-white">
+              {""}
+              speaks volumes.
+            </span>
+          </h2>
+
+          <p className="text-muted-foreground animate-fade-in animation-delay-200">
+            With a rich tapestry of experiences spanning web development, digital marketing, and IT support, 
+            I have honed a versatile skill set that allows me to navigate and excel in diverse professional landscapes. 
+          </p>
+        </div>
+
+        {/* timeline */}
+        <div className="relative">
+          <div className="timeline-glow absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/7- via-primary/30 to-transparent md:translate-x-1/2 shadow-[0_0_25px_rgba(32,178,166,0.8)]"/>
+          {/* experience items */}
+          <div>
+            {experiences.map((exp, index) => (
+              <div 
+                key={index} 
+                className="relative grid md:grid-cols-2 gap-8 animate-fade-in"
+                style={{ animationDelay: `${(index + 1) * 100}ms` }}
+           >
+
+                {/* timeline dot */}
+                <div>
+
+                </div>
+
+                {/* comtent */}
+                <div className={`pl-8 md:pl-0 ${index %2 ===0 ? "md:pr-16 md:text-right" : "md:col-start-2 md:pl-16"}`} >
+                  <div>
+                    <span>{exp.period}</span>
+                    <h3>{exp.jobTitle}</h3>
+                    <p>{exp.company}</p>
+                    <p>{exp.description}</p>
+                    <div>
+                      {exp.technologies.map((tech, idx) => (
+                        <span>{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              <div/>
+
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
