@@ -99,7 +99,7 @@ export const Testimonials = () => {
                   {testimonials.map((_, index) => (
                     <button 
                     onClick={() => setActiveIndex(index)} 
-                    className={`w-2 h-2 transition-all duration-300 ${index === 0 ? "w-8 bg-primary" : "bg-muted-foreground hover:bg-muted-foreground/50" }`}/>
+                    className={`w-2 h-2 transition-all duration-300 ${index === activeIndex ? "w-8 bg-primary" : "bg-muted-foreground hover:bg-muted-foreground/50" }`}/>
                   ))}
                 </div>
 
