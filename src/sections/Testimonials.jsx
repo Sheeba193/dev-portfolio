@@ -1,4 +1,5 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useState } from "react";
 
 const testimonials = [
   {
@@ -39,6 +40,16 @@ const testimonials = [
 ];
 
 export const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const nextTestimonial = () => {
+    setActiveIndex((prev) => (prev + 1) % testimonials.length); // Loop back to the first testimonial
+  }
+
+  const prevTestimonial = () => {
+    setActiveIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length); // Loop back to the last testimonial
+  }
+
   return (
     <section id="testimonials" className="py-32 relative overflow-hidden">
       {/* Render your testimonials here */}
@@ -64,23 +75,23 @@ export const Testimonials = () => {
                 <div className="absolute -top-4 left-8 w-12 h-12 rounded-full bg-primary flex items-center justify-center">
                   <Quote className="w-6 h-6 text-primary-foreground"/>
                 </div>
-                <blockquote className="text-2xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">"{testimonials[0].quote}"</blockquote>
+                <blockquote className="text-2xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">"{testimonials[activeIndex].quote}"</blockquote>
 
                 <div className="flex items-center gap-4">
                   <img 
-                  src={testimonials[0].avatar} 
-                  alt={testimonials[0].author}
+                  src={testimonials[activeIndex].avatar} 
+                  alt={testimonials[activeIndex].author}
                   className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20" />
                   <div className="flex items-center gap-4">
-                    <div className="font-semibold">{testimonials[0].author}</div>
-                    <div className="text-sm text-muted-foreground">{testimonials[0].role}</div>
+                    <div className="font-semibold">{testimonials[activeIndex].author}</div>
+                    <div className="text-sm text-muted-foreground">{testimonials[activeIndex].role}</div>
                   </div>
                 </div>
               </div>
 
               {/* testimonial navigation */}
               <div className="flex items-center justify-center gap-4 mt-8">
-                <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+                <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all" onClick={prevTestimonial}>
                   <ChevronLeft />
                 </button>
 
@@ -90,7 +101,7 @@ export const Testimonials = () => {
                   ))}
                 </div>
 
-                <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all">
+                <button className="p-3 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all" onClick={nextTestimonial}>
                   <ChevronRight />
                 </button>
               </div>
