@@ -97,7 +97,9 @@ export const Testimonials = () => {
 
                 <div className="flex gap-2"> 
                   {testimonials.map((_, index) => (
-                    <button className={`w-2 h-2 transition-all duration-300 ${index === 0 ? "w-8 bg-primary" : "bg-muted-foreground hover:bg-muted-foreground/50" }`}/>
+                    <button 
+                    onClick={() => setActiveIndex(index)} 
+                    className={`w-2 h-2 transition-all duration-300 ${index === 0 ? "w-8 bg-primary" : "bg-muted-foreground hover:bg-muted-foreground/50" }`}/>
                   ))}
                 </div>
 
