@@ -1,5 +1,7 @@
 import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
 import { Button } from "../components/button";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   {
@@ -41,8 +43,49 @@ export const Contact = () => {
     message: "",
 });
 
+const [isLoading, setIsLoading] = useState(false); // to indicate form submission in progress
+const [submitStatus, setSubmitStatus] = useState({ // to track form submission result
+  type: null,
+  message: "",
+}); // null, "success", "error"
+
 const handleSubmit = async (e) =>{
   e.preventDefault();
+  setIsLoading(true);
+  setSubmitStatus({ type: null, message: "" });
+
+  try {
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      throw new Error("EmailJS configuration is missing. Please check your environment variables.");
+    }
+
+    await emailjs.send(serviceId, templateId, {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    }, publicKey);
+    setSubmitStatus({ 
+      type: "success",
+      message: "Message sent successfully!"
+    });
+    setFormData({ name: "", email: "", message: "" });
+
+  }catch(error){
+    console.error("Error sending email:", error);
+    setSubmitStatus({
+      type: "error",
+      message: 
+        error.text ||"Failed to send message. Please try again later."
+    });
+  }finally{
+    setIsLoading(false);
+  }
+
+
 }
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
@@ -70,7 +113,7 @@ const handleSubmit = async (e) =>{
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-delay-300"> 
-            <form action="" className="space-y-6">
+            <form action="" className="space-y-6" onSubmit={handleSubmit}>
 
               <div>
                 <label 
@@ -132,9 +175,18 @@ const handleSubmit = async (e) =>{
                 ></textarea>
               </div>
               
-              <Button className="w-full" type="submit" size="lg">
-                Send Message
-                <Send className="w-5 h-5 ml-2" />
+              <Button className="w-full" type="submit" size="lg" disabled={isLoading}>
+                {isLoading ? (
+                  <>
+                    <Loader className="w-5 h-5 mr-2" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="w-5 h-5 ml-2" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
