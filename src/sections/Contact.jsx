@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Send, Loader, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "../components/button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -121,17 +121,16 @@ const handleSubmit = async (e) =>{
                   className="block text-sm font-medium mb-2">
                   Name
                 </label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  name="name" 
+                <input
+                  id="name"
+                  type="text"
                   required
                   placeholder="Your name..."
-                  value={FormData.name}
-                  onChange={(e) => 
-                    setFormData({...formData, name: e.target.value})
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" 
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
                 />
               </div>
 
@@ -147,7 +146,7 @@ const handleSubmit = async (e) =>{
                   name="email" 
                   required
                   placeholder="your@email.com"
-                  value={FormData.email}
+                  value={formData.email}
                   onChange={(e) => 
                     setFormData({...formData, email: e.target.value})
                   }
@@ -167,7 +166,7 @@ const handleSubmit = async (e) =>{
                   rows={5} 
                   required
                   placeholder="Your message..."
-                  value={FormData.message}
+                  value={formData.message}
                   onChange={(e) => 
                     setFormData({...formData, message: e.target.value})
                   }
@@ -188,6 +187,28 @@ const handleSubmit = async (e) =>{
                   </>
                 )}
               </Button>
+
+              {submitStatus.type && (
+                <div 
+                  className= {`flex items-center gap-3 p-4 rounded-xl
+                  ${
+                    submitStatus.type === "success"
+                    ? "bg-green-500/10 border border-green-500/20 text-green-100"
+                    : "bg-red-500/10 border border-red-500/20 text-red-100"
+                  }`}>
+                    {submitStatus.type === "success" ? (
+                      <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    ) : (
+                      <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    )}
+
+                    <p className="text-sm">
+                      {submitStatus.message}
+                    </p>
+
+                </div>
+              )}
+                
             </form>
           </div>
         </div>
