@@ -91,7 +91,7 @@ export const Hero = () => {
                   {/* animated svg border */}
                   {/*svg border animation */} 
                 <AnimatedBorderButton>
-                  <Download className="w-5 h-5"/>
+                  <Download className="w-5 h-5" href=""/>
                   Download CV
                 </AnimatedBorderButton>
             

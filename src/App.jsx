@@ -7,6 +7,7 @@ import { Testimonials } from "@/sections/Testimonials";
 import { Contact } from "@/sections/Contact";
 
 import "./index.css"
+import { Footer } from "@/layout/Footer";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
