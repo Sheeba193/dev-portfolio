@@ -47,11 +47,8 @@ export const About = () => {
                 <p>
                   With experience leading cross-functional teams 
                   delivering user-centered solutions, I enjoy turning ideas into practical, impactful systems. 
-                </p>
-
-                <p>
                   I am passionate about continuous growth, with interests in cybersecurity, responsible AI, 
-                  and emerging technologies that shape the future.
+                  and emerging technologies.
                 </p>
                 <p>
                   Whether collaborating with teams, building digital products, 
@@ -60,9 +57,9 @@ export const About = () => {
               </div>
 
               <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
-                <p className="text-lg font-medium italic text-foreground">
+                <p className="text-lg text-center font-medium italic text-foreground">
                   My mission is to leverage technology and innovation to create meaningful, user-centered solutions 
-                  that solve real-world problems and drive positive impact.
+                  that empower individuals and drive positive change in the digital world.
                   
                 </p>
               </div>

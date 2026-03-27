@@ -57,8 +57,8 @@ export const Hero = () => {
           {/* left-column-text content */}
           <div className="space-y-8">
             <div className="animate-fade-in" >
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
-                <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-md text-primary">
+                <span className="w-2 h-2   bg-primary rounded-full animate-pulse" />
                 Software Engineer * React Specialist 
               </span>
               
@@ -72,7 +72,7 @@ export const Hero = () => {
                 experiences with 
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  React.
+                  React JS.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
@@ -85,9 +85,12 @@ export const Hero = () => {
 
               {/* call-to-action buttons */}
               <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300 ">
-                <Button size="lg">
-                  Contact Me <ArrowRight className="w-5 h-5" />
-                </Button>
+                <a href="#contact" className="inline-block">
+                  <Button>
+                    Contact Me <ArrowRight className="w-5 h-5" />
+                  </Button>
+                </a>
+              
                   {/* animated svg border */}
                   {/*svg border animation */} 
                 <AnimatedBorderButton>

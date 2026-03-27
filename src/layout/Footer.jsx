@@ -22,7 +22,7 @@ export const Footer = () => {
                 {/* logo & copyright */}
                 <div className="text-center md:text-left">
                     <a href="#" className="text-xl font-bold tracking-tight">
-                        Kerubo <span className="text-primary">.</span>
+                        Bathsheba Kerubo <span className="text-primary">.</span>
                     </a>
                     <p className="text-sm text-muted-foreground mt-2">
                         &copy; {new Date().getFullYear()} Bathsheba Kerubo. All rights reserved.

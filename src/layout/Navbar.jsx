@@ -1,6 +1,8 @@
-import { Button } from "@/components/button"
-import { Menu, X } from "lucide-react"
-import { useEffect, useState } from "react"
+import { Button } from "@/components/button";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
+
 
 const navLinks = [
   {href: "#about", label: "About"},
@@ -34,7 +36,7 @@ export const Navbar = () => {
       <nav className="container mx-auto px-6 flex items-center justify-between">
         
         <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-          B K Kerubo <span className="text-primary">.</span>
+          Bathsheba Kerubo <span className="text-primary">.</span>
         </a>
 
         {/* desktop nav  */}
@@ -50,7 +52,11 @@ export const Navbar = () => {
 
         {/* CTA button */}
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact" className="inline-block">
+            <Button>
+              Contact Me <ArrowRight className="w-5 h-5" />
+            </Button>
+          </a>
         </div>
         
         {/* mobile menu button */}
