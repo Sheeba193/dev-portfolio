@@ -93,7 +93,11 @@ export const Hero = () => {
               
                   {/* animated svg border */}
                   {/*svg border animation */} 
-                <a href="/CV(5).pdf" download className="inline-block">
+                <a 
+                  href="/CV.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <AnimatedBorderButton>
                     <Download className="w-5 h-5" />
                     Download CV
