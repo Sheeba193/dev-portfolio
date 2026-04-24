@@ -70,18 +70,16 @@ export const Hero = () => {
             {/* headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100"> 
-                Crafting <span className="text-primary glow-text">Digital </span>
+                Frontend Developer (React) <span className="text-primary glow-text">building fast, </span>
                 <br />
-                experiences with 
+                scalable, 
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  React JS.
+                  user-focused web applications
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I'm a passionate software engineer specializing in React, 
-                dedicated to crafting seamless and engaging web experiences. 
-                With a strong foundation in JavaScript and a keen eye for design, 
+                I specialize in React, REST API integration, and performance optimization to deliver seamless user experiences. 
                 I bring ideas to life through clean, efficient code. Let's build something amazing together!
               </p>
             </div>
