@@ -65,7 +65,7 @@ export const Projects = () => {
               </span>
               <h2 className="text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-secondary-foreground">
                 Projects 
-                <span className="font-serif italic font-normal text-white">I've Worked On</span>
+                <span className="font-serif italic font-normal text-black/80">I've Worked On</span>
               </h2>
               <p className="text-lg text-muted-foreground mt-4 animate-fade-in animation-delay-200">
                 Here are some of the projects I've worked on. Each one represents a unique challenge and solution.

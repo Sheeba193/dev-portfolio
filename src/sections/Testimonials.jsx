@@ -62,7 +62,7 @@ export const Testimonials = () => {
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-secondary-foreground">
               Kind Words From {" "}
-              <span className="font-serif italic font-normal text-white"> My Associates</span>
+              <span className="font-serif italic font-normal text-black/80"> My Associates</span>
             </h2>
             
           </div>

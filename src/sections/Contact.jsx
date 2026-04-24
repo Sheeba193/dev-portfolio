@@ -102,7 +102,7 @@ const handleSubmit = async (e) =>{
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-secondary-foreground">
             Let's build {" "} 
-            <span className="font-serif italic font-normal text-white">
+            <span className="font-serif italic font-normal text-black/80">
               something amazing
             </span>
           </h2>
@@ -246,7 +246,7 @@ const handleSubmit = async (e) =>{
             {/* availability card */}
             <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
-                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                <span className="w-3 h-3 bg-primary rounded-full animate-pulse"/>
                 <span className="font-medium">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">

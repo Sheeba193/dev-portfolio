@@ -40,7 +40,7 @@ export const About = () => {
             
               <h2 className="text-4xl md:5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
                 Learning & Building
-                <span className="text-serif italic font-normal text-white"> everyday.</span>
+                <span className="text-serif italic font-normal text-black/80"> everyday.</span>
               </h2>
 
               <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">

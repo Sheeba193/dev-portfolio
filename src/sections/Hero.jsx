@@ -42,7 +42,7 @@ export const Hero = () => {
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={
               {
-                backgroundColor: "#20b2a6",
+                backgroundColor: "#8b1e3f",
                 left:`${Math.random() * 100}%`,
                 top:`${Math.random() * 100}%`,
                 animation:`slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
@@ -70,11 +70,11 @@ export const Hero = () => {
             {/* headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100"> 
-                Building <span className="text-primary glow-text">fast, </span>
+              Building <span className="text-primary glow-text">fast, </span>
                 <br />
                 scalable, 
                 <br />
-                <span className="font-serif italic font-normal text-white">
+                <span className="font-serif italic font-normal text-black/80">
                   user-focused web applications
                 </span>
               </h1>
@@ -141,7 +141,7 @@ export const Hero = () => {
                 {/* floating badge */}
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3 ">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
+                    <div className="w-3 h-3 bg-primary rounded-full animate-pulse"/>
                     <span className="text-sm font-medium">Available for work</span>
                   </div>
                 </div>
