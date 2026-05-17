@@ -6,7 +6,7 @@ This project showcases my skills, projects, experience, and passion for software
 ---
 
 ## 🚀 Live Demo 
-[View Portfolio]([https://bathshebakerubo.netlify.app/]
+[https://bathshebakerubo.netlify.app/]
 
 ---
 
