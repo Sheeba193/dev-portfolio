@@ -91,18 +91,18 @@ const handleSubmit = async (e) =>{
     <section id="contact" className="py-32 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full filter blur-xl opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-hightlight/5 rounded-full filter blur-xl opacity-30 animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-highlight/5 rounded-full filter blur-xl opacity-30 animate-pulse"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         {/* section header */}
         <div className="text-center mx-auto max-w-3xl mb-16"> 
-          <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
+          <span className="text-primary text-sm font-medium tracking-wider uppercase animate-fade-in">
             Get In Touch
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-secondary-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 animate-fade-in animation-delay-100 text-foreground">
             Let's build {" "} 
-            <span className="font-serif italic font-normal text-black/80">
+            <span className="font-serif italic font-normal text-primary/90">
               something amazing
             </span>
           </h2>
@@ -118,7 +118,7 @@ const handleSubmit = async (e) =>{
               <div>
                 <label 
                   htmlFor="name" 
-                  className="block text-sm font-medium mb-2">
+                  className="block text-sm font-medium mb-2 text-foreground">
                   Name
                 </label>
                 <input
@@ -130,14 +130,14 @@ const handleSubmit = async (e) =>{
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-foreground placeholder:text-muted-foreground/50"
                 />
               </div>
 
               <div>
                 <label 
                   htmlFor="email" 
-                  className="block text-sm font-medium mb-2">
+                  className="block text-sm font-medium mb-2 text-foreground">
                   Email
                 </label>
                 <input 
@@ -150,14 +150,14 @@ const handleSubmit = async (e) =>{
                   onChange={(e) => 
                     setFormData({...formData, email: e.target.value})
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" 
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-foreground placeholder:text-muted-foreground/50" 
                 />
               </div>
 
               <div>
                 <label 
                   htmlFor="message" 
-                  className="block text-sm font-medium mb-2">
+                  className="block text-sm font-medium mb-2 text-foreground">
                   Message
                 </label>
                 <textarea 
@@ -170,7 +170,7 @@ const handleSubmit = async (e) =>{
                   onChange={(e) => 
                     setFormData({...formData, message: e.target.value})
                   }
-                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none text-foreground placeholder:text-muted-foreground/50"
                 ></textarea>
               </div>
               
@@ -193,8 +193,8 @@ const handleSubmit = async (e) =>{
                   className= {`flex items-center gap-3 p-4 rounded-xl
                   ${
                     submitStatus.type === "success"
-                    ? "bg-green-500/10 border border-green-500/20 text-green-100"
-                    : "bg-red-500/10 border border-red-500/20 text-red-100"
+                    ? "bg-green-500/10 border border-green-500/20 text-green-700"
+                    : "bg-red-500/10 border border-red-500/20 text-red-700"
                   }`}>
                     {submitStatus.type === "success" ? (
                       <CheckCircle className="w-5 h-5 flex-shrink-0" />
@@ -217,7 +217,7 @@ const handleSubmit = async (e) =>{
           {/* contact info */}
           <div className="space-y-6 animate-fade-in animation-delay-400">
             <div className="glass rounded-3xl p-8">
-              <h3 className="text-xl font-semibold mb-6">
+              <h3 className="text-xl font-semibold mb-6 text-foreground">
                 Contact Information
               </h3>
               <div className="space-y-4">
@@ -234,7 +234,7 @@ const handleSubmit = async (e) =>{
                       <div className="text-sm text-muted-foreground">
                         {item.label}
                       </div>
-                      <div className="font-medium">
+                      <div className="font-medium text-foreground">
                         {item.value}
                       </div>
                     </div>
@@ -247,7 +247,7 @@ const handleSubmit = async (e) =>{
             <div className="glass rounded-3xl p-8 border border-primary/30">
               <div className="flex items-center gap-3 mb-4">
                 <span className="w-3 h-3 bg-primary rounded-full animate-pulse"/>
-                <span className="font-medium">Currently Available</span>
+                <span className="font-medium text-foreground">Currently Available</span>
               </div>
               <p className="text-muted-foreground text-sm">
               I'm currently open to new opportunities and exciting projects. 
