@@ -79,8 +79,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I specialize in React, REST API integration, and performance optimization to deliver seamless user experiences. 
-                I bring ideas to life through clean, efficient code. Let's build something amazing together!
+                I specialize in React, Next.js, and Tailwind CSS to create seamless user experiences. With 4+ years of experience, I build performant and scalable web applications that users love.
               </p>
             </div>
 
