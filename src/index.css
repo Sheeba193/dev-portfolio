@@ -13,11 +13,11 @@
 
   /* 🌹 SECONDARY */
   --color-secondary: #fbe4ea;
-  --color-secondary-foreground: #8b1e3f;
+  --color-secondary-foreground: #6b1f3f;
 
-  /* 🌸 MUTED */
+  /* 🌸 MUTED - improved contrast */
   --color-muted: #f4e6ea;
-  --color-muted-foreground: #6b5b63;
+  --color-muted-foreground: #4a4047;
 
   /* 🌸 BORDER */
   --color-border: #e8cfd6;

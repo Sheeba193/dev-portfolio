@@ -112,7 +112,7 @@ export const Projects = () => {
                       {project.description}</p>
                     <div>
                       {project.tags.map((tag,tagIndex) =>(
-                        <span className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover-text-primary transition-all duration-300">{tag}</span>
+                        <span className="px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover-text-primary transition-all[...]
                       ))}
                     </div>
                   </div>
@@ -124,10 +124,16 @@ export const Projects = () => {
 
             {/* view all projects link */}
             <div className="text-center mt-12 animate-fade-in animation-delay-500">
-              <AnimatedBorderButton>
-                View All Projects
-                <ArrowRight className="w-5 h-5" />
-              </AnimatedBorderButton>
+              <a 
+                href="https://app.netlify.com/teams/sheeba193/projects" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AnimatedBorderButton>
+                  View All Projects
+                  <ArrowRight className="w-5 h-5" />
+                </AnimatedBorderButton>
+              </a>
             </div>
           </div> 
         
