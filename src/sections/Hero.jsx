@@ -79,7 +79,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I specialize in React, Next.js, and Tailwind CSS to create seamless user experiences. With 4+ years of experience, I build performant and scalable web applications that users love.
+                I specialize in React JS development, crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and innovative solutions to every project.
               </p>
             </div>
 
