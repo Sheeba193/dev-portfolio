@@ -41,7 +41,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: "Inter", sans-serif;
+    font-family: playfair display, serif;
     line-height: 1.5;
   }
 
