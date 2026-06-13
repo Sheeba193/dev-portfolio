@@ -19,7 +19,15 @@ const skills = [
   "Jest",
   "AWS (S3)",
   "API Integration & Security",
-  "Docker"
+  "Docker",
+  "Django",
+  "Python",
+  "Agile Methodologies",
+  "Jira",
+  "Debugging & Performance Optimization",
+  "Cross-Browser Compatibility",
+  "Accessibility (WCAG)",
+  
 ];
 
 export const Hero = () => {
