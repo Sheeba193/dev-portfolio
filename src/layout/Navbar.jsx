@@ -36,7 +36,7 @@ export const Navbar = () => {
       <nav className="container mx-auto px-6 flex items-center justify-between">
         
         <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-          Bathseba Kerubo <span className="text-primary">.</span>
+          Bathseba Kerubo Kengere<span className="text-primary">.</span>
         </a>
 
         {/* desktop nav  */}
