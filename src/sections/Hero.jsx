@@ -27,6 +27,10 @@ const skills = [
   "Debugging & Performance Optimization",
   "Cross-Browser Compatibility",
   "Accessibility (WCAG)",
+  "Java Springboot",
+  "MySQL",
+  "MongoDB",
+  "Express.js",
   
 ];
 
