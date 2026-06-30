@@ -4,38 +4,31 @@ import { useState } from "react";
 const testimonials = [
   {
     quote:
-      "Working with Sheeba was an absolute pleasure. Her attention to detail and ability to deliver on time exceeded our expectations.",
-    author: "Brian Mwangi",
-    role: "Product Manager, Finetek Labs",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      "Kerubo consistently delivers high-quality work with professionalism and attention to detail. Her technical expertise and commitment to excellence have made her a valuable part of every project we've worked on together.",
+    author: "Franklyne Adede",
+    role: "Co-Founder, Dalali Merchants LTD",
+    avatar: "FA",
   },
   {
     quote:
-      "She transformed our website into a modern, user-friendly platform. Our customer engagement has significantly improved.",
-    author: "Lydia Njeri",
-    role: "Founder, Luxe Fusion Creations",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      "Working with Kerubo has been an outstanding experience. She transformed our ideas into a beautiful, user-friendly digital presence while maintaining clear communication and meeting every deadline.",
+    author: "Mercyline Bosibori",
+    role: "Co-Founder, Luxe Fusion Creations",
+    avatar: "MB",
   },
   {
     quote:
-      "A highly skilled developer with a great eye for UI/UX design. She brought our ideas to life effortlessly.",
-    author: "David Otieno",
-    role: "CTO, Startup Hub Nairobi",
-    avatar: "https://randomuser.me/api/portraits/men/76.jpg",
+      "Kerubo is reliable, creative, and highly skilled. From website development to branding, she consistently provides solutions that exceed expectations and help businesses grow.",
+    author: "Robert Mong'are",
+    role: "Founder, Robie Cleaning Services",
+    avatar: "RM",
   },
   {
     quote:
-      "Her leadership and communication skills made the entire project smooth and efficient. I’d definitely work with her again.",
-    author: "Mercy Wambui",
-    role: "Project Coordinator, Egerton University",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-  },
-  {
-    quote:
-      "Professional, creative, and reliable. She consistently delivers high-quality work even under tight deadlines.",
-    author: "Kevin Kiptoo",
-    role: "Marketing Lead, Dalali Merchants LTD",
-    avatar: "https://randomuser.me/api/portraits/men/55.jpg",
+      "Kerubo brings together strong technical skills, creativity, and excellent teamwork. Her ability to solve complex problems and deliver polished solutions makes her someone I would confidently recommend.",
+    author: "Steve Kombo",
+    role: "Co-Founder, Finetek Labs",
+    avatar: "SK",
   },
 ];
 
