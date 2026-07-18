@@ -10,6 +10,11 @@ This project showcases my skills, projects, experience, and passion for software
 
 ---
 
+## Screenshot 
+<img width="1774" height="852" alt="image" src="https://github.com/user-attachments/assets/7b714671-9648-4b5a-940e-d58fe5e1a25f" />
+
+---
+
 ## 👩🏽‍💻 About Me
 
 I am a **Software Developer, Digital Marketing Specialist, and Project Management enthusiast** based in Nairobi, Kenya.  
