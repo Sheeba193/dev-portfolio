@@ -161,3 +161,112 @@
     transform: translate(20px, 10px);
   }
 }
+
+/* 📱 Responsive Typography for Large Screens (1920px+) */
+@media (min-width: 1920px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.15em;
+  }
+
+  p {
+    font-size: 1.05em;
+  }
+
+  .text-lg {
+    font-size: 1.15rem;
+  }
+
+  .text-xl {
+    font-size: 1.4rem;
+  }
+
+  .text-2xl {
+    font-size: 1.7rem;
+  }
+
+  .text-4xl {
+    font-size: 2.5rem;
+  }
+
+  .text-5xl {
+    font-size: 3.2rem;
+  }
+
+  .text-6xl {
+    font-size: 3.8rem;
+  }
+
+  .text-7xl {
+    font-size: 4.5rem;
+  }
+
+  /* Also scale up spacing slightly */
+  .container {
+    max-width: 1400px;
+  }
+
+  .px-6 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .py-32 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* 📺 Responsive Typography for Extra Large Screens (2560px+) */
+@media (min-width: 2560px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.35em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .text-lg {
+    font-size: 1.25rem;
+  }
+
+  .text-xl {
+    font-size: 1.55rem;
+  }
+
+  .text-2xl {
+    font-size: 1.9rem;
+  }
+
+  .text-4xl {
+    font-size: 2.8rem;
+  }
+
+  .text-5xl {
+    font-size: 3.5rem;
+  }
+
+  .text-6xl {
+    font-size: 4.2rem;
+  }
+
+  .text-7xl {
+    font-size: 5rem;
+  }
+}
