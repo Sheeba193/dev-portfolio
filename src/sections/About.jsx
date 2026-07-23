@@ -3,27 +3,27 @@ import { Code2, Rocket, Users, Lightbulb } from "lucide-react";
 const highlights = [
   {
     icon: Code2,
-    title: "Modern Development",
+    title: "Full-Stack Development",
     description:
-      "Building responsive web applications with React, TypeScript, and JavaScript.",
+      "Building complete web applications with React for frontend and Spring Boot for backend.",
   },
   {
     icon: Rocket,
     title: "Performance",
     description:
-      "Creating fast, scalable, and maintainable digital experiences.",
+      "Creating fast, scalable, and maintainable digital experiences across frontend and backend.",
   },
   {
     icon: Users,
     title: "Collaboration",
     description:
-      "Working closely with teams to deliver user-focused solutions.",
+      "Working closely with teams to deliver user-focused, end-to-end solutions.",
   },
   {
     icon: Lightbulb,
     title: "Problem Solving",
     description:
-      "Turning complex challenges into simple, effective solutions.",
+      "Turning complex challenges into simple, effective solutions at every layer.",
   },
 ];
 
@@ -49,15 +49,16 @@ export const About = () => {
 
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm <strong>Bathseba Kerubo</strong>, a Frontend Developer passionate
+                I'm <strong>Bathseba Kerubo</strong>, a Full-Stack Developer passionate
                 about building modern, responsive, and user-friendly web
                 applications.
               </p>
 
               <p>
-                I enjoy transforming ideas into intuitive digital products using
-                React, TypeScript, JavaScript, and thoughtful UI/UX design,
-                always focusing on clean code and meaningful user experiences.
+                I specialize in crafting complete solutions using <strong>ReactJS</strong> for dynamic, 
+                intuitive frontends and <strong>Spring Boot</strong> for robust, scalable backends. 
+                I combine TypeScript, JavaScript, thoughtful UI/UX design, and clean architecture 
+                to create meaningful digital products.
               </p>
             </div>
 
