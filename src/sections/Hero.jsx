@@ -74,7 +74,7 @@ export const Hero = () => {
             <div className="animate-fade-in" >
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-md text-primary">
                 <span className="w-2 h-2   bg-primary rounded-full animate-pulse" />
-                Software Engineer * Digital Specialist 
+                Full-Stack Developer * Digital Specialist 
               </span>
               
             </div>
@@ -91,7 +91,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I specialize in React JS development, crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and innovative solutions to every project.
+                I specialize in full-stack development with React JS for dynamic frontends and Spring Boot for robust backends. Crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and complete solutions.
               </p>
             </div>
 
