@@ -87,11 +87,11 @@ export const Hero = () => {
                 scalable, 
                 <br />
                 <span className="font-serif italic font-normal text-black/80">
-                  user-focused web applications
+                  user-focused applications and softwares
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I specialize in React JS development, crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and innovative solutions to every project.
+                I specialize in React JS and Spring Boot, crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and innovative solutions to every project.
               </p>
             </div>
 
