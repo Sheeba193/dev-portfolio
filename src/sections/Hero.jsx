@@ -4,7 +4,8 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const skills = [
   "React JS",
-  "JavaScript",                                                     
+  "JavaScript",
+  "Java Springboot",                                                   
   "Node.js",
   "Next.js",
   "Tailwind CSS",      
@@ -91,11 +92,7 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-<<<<<<< HEAD
                 I specialize in React JS and Spring Boot, crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and innovative solutions to every project.
-=======
-                I specialize in full-stack development with React JS for dynamic frontends and Spring Boot for robust backends. Crafting seamless user experiences with a focus on performance and accessibility. With 4+ years of experience, I bring a passion for clean code and complete solutions.
->>>>>>> 3dad4a91d34cd889582936bb147c353541a64a41
               </p>
             </div>
 
