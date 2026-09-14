@@ -88,7 +88,7 @@ export const Hero = () => {
                 scalable, 
                 <br />
                 <span className="font-serif italic font-normal text-black/80">
-                  user-focused applications and softwares
+                  user-focused applications.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
