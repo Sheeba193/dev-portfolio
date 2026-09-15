@@ -192,13 +192,25 @@ export const Hero = () => {
     </div>
        
     <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in animation-delay-800">
-      <a 
+      {/* <a 
         href="#about" 
         className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
       >
         <span className="text-xs uppercase tracking-wider">Scroll</span>
         <ChevronDown className="w-6 h-6 animate-bounce" />
-      </a>
+      </a> */}
+       <button
+          onClick={() => {
+            document.getElementById("about")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }}
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+        >
+          <span className="text-xs uppercase tracking-wider">Scroll</span>
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </button>
     </div>
 
     </section>
