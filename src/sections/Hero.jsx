@@ -30,8 +30,9 @@ const skills = [
   "Accessibility (WCAG)",
   "Java Springboot",
   "MySQL",
-  "MongoDB",
-  "Express.js",
+  "Canva",
+  "Capcut"
+
   
 ];
 
